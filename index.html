@@ -150,23 +150,49 @@
   /* Memories */
   .memory {
     text-align: left;
-    background: var(--panel);
-    padding: 20px 22px;
-    margin-bottom: 16px;
-    border-left: 2px solid var(--gold);
+    padding: 30px 0;
+    border-top: 1px solid var(--rule);
   }
 
-  .memory p {
-    margin: 0 0 10px;
-    font-size: 17px;
+  .memory:first-of-type {
+    border-top: none;
+  }
+
+  .memory .from-label {
+    margin: 0 0 14px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .memory p.text {
+    margin: 0 0 14px;
+    font-size: 18px;
     color: var(--cream);
   }
 
-  .memory .from {
-    font-size: 15px;
-    color: var(--cream-dim);
-    margin: 0;
-    font-style: italic;
+  .memory p.text:last-child {
+    margin-bottom: 0;
+  }
+
+  .memory .memory-photo {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 1px solid var(--rule);
+    display: block;
+  }
+
+  .memory .photo-pair {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .memory .photo-pair img {
+    width: 50%;
+    border: 1px solid var(--rule);
+    display: block;
   }
 
   .empty-state {
@@ -235,7 +261,7 @@
     <p class="share-copy">There are other events in the area the same weekend, so rooms are filling up quickly. We'd recommend booking sooner rather than later.</p>
     <p class="details"><strong>Best Western Firestone Inn &amp; Suites</strong></p>
     <p class="venue">Longmont, CO</p>
-    <p class="share-copy">Rooms are reserved under a special rate. To arrange a room, text Christina at <a href="sms:+16144487170" style="color:var(--cream); text-decoration:underline;">(614) 448-7170</a>.</p>
+    <p class="share-copy">Rooms are reserved under a special rate. To arrange a room, text Christina at <a href="sms:+16145587170" style="color:var(--cream); text-decoration:underline;">(614) 558-7170</a>.</p>
 
     <p class="details" style="margin-top:32px;"><strong>Omni Interlocken Hotel</strong></p>
     <p class="venue">Broomfield, CO</p>
@@ -249,7 +275,40 @@
 
     <div style="margin-top:40px; text-align:left;">
       <!-- MEMORIES START -->
-      <p class="empty-state">Memories will appear here as they're shared.</p>
+      <div class="memory">
+        <p class="from-label">From Alan Janoff</p>
+        <p class="text">I must tell you David and I used to talk almost every day and I miss him. I think about him constantly. Two summers ago I flew in to Trenton to spend a few days with David. I got cheesesteaks and Philadelphia brought them to Trenton and then we went to Atlantic City for a couple days. It was a wonderful time together. My love to all, Alan.</p>
+      </div>
+
+      <div class="memory">
+        <p class="from-label">From Alan Janoff</p>
+        <img class="memory-photo" src="memory-balloon.jpg" alt="David at an event in Colorado Springs">
+        <p class="text">This is a photo of Dave when we went to an event with him and Colorado Springs years ago.</p>
+      </div>
+
+      <div class="memory">
+        <p class="from-label">From Alan Janoff</p>
+        <div class="photo-pair">
+          <img src="memory-vegas-1.jpg" alt="David, Tom, and Alan in Las Vegas">
+          <img src="memory-vegas-2.jpg" alt="David, Tom, and Alan at the Venetian in Las Vegas">
+        </div>
+        <p class="text">These are pictures of David, Tom and I when the three of us met up in Las Vegas. Fun trip.</p>
+      </div>
+      <div class="memory">
+        <p class="from-label">From Andie Redwine</p>
+        <p class="text">The first time I met Dave Providence, I was spending the night with my new friend, Christina. It was the summer between 7th and 8th grade, and Dave was glued to a Wimbledon match on television. My dad watched football, basketball, and baseball, so a father enthusiastically embracing women's tennis was completely novel to me.</p>
+        <p class="text">To beat the Muncie heat, Christina and I decided to stay indoors and play Monopoly in the loft above the family room. We could hear Dave talking to the TV downstairs, and he could certainly hear us.</p>
+        <p class="text">The Providences had a great dog - a collie named Cindy - who provided Dave companionship as he watched Martina Navratilova take on Steffi Graf. I can't remember which player Dave was rooting for, but he was certainly animated, providing play by plays to Cindy, who gave her rapt attention to Dave's commentary and likely the snacks he was munching.</p>
+        <p class="text">Christina and I grew bored with Monopoly, and we were trying to decide who won the game so we could end it. The discussion wasn't exactly heated between us, but it was emphatic. One of us may have been wrong, but neither of us was confused.</p>
+        <p class="text">Pretty soon, we heard a shift in Dave's commentary: "You know, Cindy&hellip;I have Boardwalk&hellip;but you have Park Place with a hotel&hellip;but then I have all of the green sections&hellip;but you have more cash&hellip;I don't know, Cindy&hellip;"</p>
+        <p class="text">And then Dave made fun of us with a one-liner I've borrowed and used since I was 13 years old:</p>
+        <p class="text">"You know, Cindy? The stakes truly have never been lower."</p>
+        <p class="text">Dave and Cheryl were fully present for all of Christina and Nikki's friends through adolescence &mdash; orchestra concerts, plays, our first driving experiences, ill-advised romances gone horribly wrong, and fantastic New Year's Eve parties that made me feel like I belonged and mattered.</p>
+        <p class="text">He had two nicknames for me: Andie Panda and Rossovino - both of which would just come out of his mouth as pronouncements at random times and make me giggle. I'm even giggling as I write this.</p>
+        <p class="text">I learned a few things from Dave. First, anything seemingly ordinary can bring joy. A 3D poster you have to sort of cross your eyes at to really see. Cranberry topping on a ginger cheesecake. Most recently, a play by play of the deck building at the family home in Colorado. Fantastic. Secondly, everyone should have a place at the table. My family didn't celebrate Christmas, but I wanted to as a kid - and the Providences made sure I had a place in their celebration. Thirdly, I learned to try things - even repair work I have no business doing. Finally, I learned how to put people at ease, especially myself. Because even if you make a mistake and fail? The stakes truly have never been lower.</p>
+        <p class="text">I'm so glad we had you, Dave. Christina, Nikki, and Cheryl? Thank you for sharing him with us. I'm going to toast him with a little brandy this evening because it evaporates in your mouth. If you know, you know.</p>
+      </div>
+
       <!-- MEMORIES END -->
     </div>
   </section>
